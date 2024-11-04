@@ -1,0 +1,101 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8; /* Cor de fundo suave */
+    color: #333; /* Cor do texto */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura da viewport */
+}
+
+.container {
+    background-color: #ffffff; /* Fundo branco para o formulário */
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+    padding: 20px;
+    width: 90%; /* Largura padrão para dispositivos móveis */
+    max-width: 400px; /* Largura máxima do formulário */
+    overflow-y: auto; /* Adiciona rolagem se o conteúdo exceder a altura */
+    max-height: 90vh; /* Altura máxima para evitar corte */
+}
+
+h1 {
+    text-align: center;
+    color: #0056b3; /* Cor do título */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold; /* Negrito para os rótulos */
+}
+
+input[type="number"] {
+    width: calc(100% - 22px); /* Largura do campo de entrada */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc; /* Borda leve */
+    border-radius: 4px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+button {
+    background-color: #0056b3; /* Cor do botão */
+    color: white; /* Cor do texto do botão */
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; /* Mão ao passar o mouse */
+    width: 100%;
+    font-size: 16px; /* Tamanho da fonte do botão */
+}
+
+button:hover {
+    background-color: #004494; /* Cor do botão ao passar o mouse */
+}
+
+.results {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #e9f7fe; /* Fundo leve para os resultados */
+}
+
+.recommendations {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ffcc00;
+    border-radius: 4px;
+    background-color: #fff3cd; /* Fundo leve para recomendações */
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    .container {
+        width: 95%; /* Largura maior em telas menores */
+        padding: 15px; /* Menos padding para se ajustar melhor */
+    }
+
+    h1 {
+        font-size: 24px; /* Tamanho da fonte do título em dispositivos móveis */
+    }
+
+    input[type="number"],
+    button {
+        font-size: 14px; /* Menor tamanho de fonte para dispositivos móveis */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px; /* Tamanho do título ainda menor para telas muito pequenas */
+    }
+
+    input[type="number"],
+    button {
+        font-size: 12px; /* Menor tamanho de fonte em telas muito pequenas */
+    }
+}

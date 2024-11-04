@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnóstico de Transformação Digital</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Diagnóstico de Transformação Digital</h1>
+        <p>Por favor, responda às perguntas com uma nota de 1 a 5.</p>
+        <form id="diagnostico-form">
+            <label for="comunicacao">Frequência do uso de ferramentas de comunicação interna:</label>
+            <input type="number" id="comunicacao" min="1" max="5" required>
+
+            <label for="colaboracao">Nível de uso de ferramentas de colaboração:</label>
+            <input type="number" id="colaboracao" min="1" max="5" required>
+
+            <label for="crm">Uso de plataforma de CRM:</label>
+            <input type="number" id="crm" min="1" max="5" required>
+
+            <label for="dadosCrm">Uso de dados de CRM para decisão:</label>
+            <input type="number" id="dadosCrm" min="1" max="5" required>
+
+            <label for="automacao">Uso de automação para otimização:</label>
+            <input type="number" id="automacao" min="1" max="5" required>
+
+            <label for="otimizacao">Revisão e otimização de processos:</label>
+            <input type="number" id="otimizacao" min="1" max="5" required>
+
+            <label for="bi">Frequência do uso de ferramentas de BI:</label>
+            <input type="number" id="bi" min="1" max="5" required>
+
+            <label for="dashboards">Uso de dashboards para indicadores:</label>
+            <input type="number" id="dashboards" min="1" max="5" required>
+
+            <label for="ia">Uso de análises preditivas ou machine learning:</label>
+            <input type="number" id="ia" min="1" max="5" required>
+
+            <label for="integracaoIa">Nível de integração da IA:</label>
+            <input type="number" id="integracaoIa" min="1" max="5" required>
+
+            <button type="submit">Enviar Diagnóstico</button>
+        </form>
+        <div id="result" class="results" style="display: none;"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
